@@ -2,17 +2,17 @@ To push code to Github using SSH, we need to follow these instructions:
 
 1. **Change the Remote URL to Use SSH:**
    You can change the remote URL of your repository to use SSH by running the following command:
-   \`\`\`bash
+   ```bash
    git remote set-url origin git@github.com:username/repo.git
-   \`\`\`
+   ```
    Make sure to replace \`username/repo.git\` with your actual repository information.
 
 2. **Generate an SSH Key (If You Haven't Already):**
    - Open a terminal or command prompt.
    - Run the following command to generate an SSH key pair:
-   \`\`\`bash
+   ```bash
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-   \`\`\`
+   ```
    Better to use the email connected to your Github account.
 
 3. **Add the SSH Key to Your GitHub Account:**
@@ -23,16 +23,16 @@ To push code to Github using SSH, we need to follow these instructions:
 
 4. **Test the SSH Connection:**
    Run the following command to test the SSH connection to GitHub:
-   \`\`\`bash
+   ```bash
    ssh -T git@github.com
-   \`\`\`
+   ```
    You should see a message like "Hi username! You've successfully authenticated..."
 
 5. **Push Your Code:**
    After setting the remote URL to use SSH and adding your SSH key to GitHub, you can push your code as you normally would:
-   \`\`\`bash
+   ```bash
    git push origin master
-   \`\`\`
+   ```
    Replace \`master\` with the appropriate branch name if needed.
 
 ### Please Note:
